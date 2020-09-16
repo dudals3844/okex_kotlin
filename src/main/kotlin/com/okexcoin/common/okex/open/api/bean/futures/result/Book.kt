@@ -8,27 +8,27 @@ open class Book{
     private lateinit var bids: JSONArray
     private lateinit var timestamp: String
 
-    fun getAsks(): JSONArray{
+    open fun getAsks(): JSONArray{
         return asks
     }
 
-    fun setAsks(asks: JSONArray){
+    open fun setAsks(asks: JSONArray){
         this.asks = asks
     }
 
-    fun getBids(): JSONArray{
+    open fun getBids(): JSONArray{
         return bids
     }
 
-    fun setBids(bids: JSONArray){
+    open fun setBids(bids: JSONArray){
         this.bids = bids
     }
 
-    fun getTimestamp(): String{
+    open fun getTimestamp(): String{
         return timestamp
     }
 
-    fun setTimestamp(timestamp: String){
+    open fun setTimestamp(timestamp: String){
         this.timestamp = timestamp
     }
 

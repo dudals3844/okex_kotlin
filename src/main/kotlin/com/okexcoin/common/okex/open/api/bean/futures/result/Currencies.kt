@@ -8,27 +8,27 @@ open class Currencies{
     private lateinit var min_size: String
 
 
-    fun getId(): String{
+    open fun getId(): String{
         return id
     }
 
-    fun setId(id: String){
+    open fun setId(id: String){
         this.id = id
     }
 
-    fun getName(): String{
+    open fun getName(): String{
         return name
     }
 
-    fun setName(name: String){
+    open fun setName(name: String){
         this.name = name
     }
 
-    fun getMin_size(): String{
+    open fun getMin_size(): String{
         return min_size
     }
 
-    fun setMin_size(min_size: String){
+    open fun setMin_size(min_size: String){
         this.min_size = min_size
     }
 }

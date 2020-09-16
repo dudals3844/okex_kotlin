@@ -5,27 +5,27 @@ open class EstimatedPrice{
     private lateinit var settlement_price: String
     private lateinit var timestamp: String
 
-    fun getTimestamp(): String{
+    open fun getTimestamp(): String{
         return timestamp
     }
 
-    fun setTimestamp(timestamp: String){
+    open fun setTimestamp(timestamp: String){
         this.timestamp = timestamp
     }
 
-    fun getInstrument_id(): String{
+    open fun getInstrument_id(): String{
         return instrument_id
     }
 
-    fun setInstrument_id(instrument_id: String){
+    open fun setInstrument_id(instrument_id: String){
         this.instrument_id = instrument_id
     }
 
-    fun getSettlement_price(): String{
+    open fun getSettlement_price(): String{
         return settlement_price
     }
 
-    fun setSettlement_price(settlement_price: String){
+    open fun setSettlement_price(settlement_price: String){
         this.settlement_price = settlement_price
     }
 
